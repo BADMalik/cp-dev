@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "text": "People dont respect your boundries : ",
+    "options": [
+      {
+        "value": "A",
+        "content": "You protest",
+        "extroWeight": 3,
+        "introWeight": 0
+      },
+      {
+        "value": "B",
+        "content": "Stay passive aggressive",
+        "extroWeight": 2,
+        "introWeight": 1
+      },
+      {
+        "value": "C",
+        "content": "Listen ",
+        "extroWeight": 1,
+        "introWeight": 2
+      },
+      {
+        "value": "D",
+        "content": "Interrupt and over explain yourself",
+        "extroWeight": 0,
+        "introWeight": 3
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "text": "You didnt like your burger",
+    "options": [
+      {
+        "value": "A",
+        "content": "Get irritated.",
+        "extroWeight": 3,
+        "introWeight": 0
+      },
+      {
+        "value": "B",
+        "content": "Stay quiet",
+        "extroWeight": 2,
+        "introWeight": 1
+      },
+      {
+        "value": "C",
+        "content": "Question your choices",
+        "extroWeight": 1,
+        "introWeight": 2
+      },
+      {
+        "value": "D",
+        "content": "Just go with the flow",
+        "extroWeight": 0,
+        "introWeight": 3
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "text": "you are sleepy but kids are noisy",
+    "options": [
+      {
+        "value": "A",
+        "content": "You shut them up",
+        "extroWeight": 3,
+        "introWeight": 0
+      },
+      {
+        "value": "B",
+        "content": "You try to adjust",
+        "extroWeight": 2,
+        "introWeight": 1
+      },
+      {
+        "value": "C",
+        "content": "You go to the other room",
+        "extroWeight": 1,
+        "introWeight": 2
+      },
+      {
+        "value": "D",
+        "content": "You dont do anything",
+        "extroWeight": 0,
+        "introWeight": 3
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "text": "Over burdened at work",
+    "options": [
+      {
+        "value": "A",
+        "content": "Inform your manager",
+        "extroWeight": 3,
+        "introWeight": 0
+      },
+      {
+        "value": "B",
+        "content": "Do overtime",
+        "extroWeight": 2,
+        "introWeight": 1
+      },
+      {
+        "value": "C",
+        "content": "Ask for help",
+        "extroWeight": 1,
+        "introWeight": 2
+      },
+      {
+        "value": "D",
+        "content": "Do every thing yourself",
+        "extroWeight": 0,
+        "introWeight": 3
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "text": "Food is not cooked nicely",
+    "options": [
+      {
+        "value": "A",
+        "content": "You bluntly say",
+        "extroWeight": 3,
+        "introWeight": 0
+      },
+      {
+        "value": "B",
+        "content": "You mentions it later",
+        "extroWeight": 2,
+        "introWeight": 1
+      },
+      {
+        "value": "C",
+        "content": "You add extra spices",
+        "extroWeight": 1,
+        "introWeight": 2
+      },
+      {
+        "value": "D",
+        "content": "You eat it quietly",
+        "extroWeight": 0,
+        "introWeight": 3
+      }
+    ]
+  }
+]
