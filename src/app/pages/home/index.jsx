@@ -1,16 +1,17 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import { useAppContext } from "../../providers/contextProvider";
-import { yupResolver } from "@hookform/resolvers/yup";
-import { userActions } from "../../actions/questionActions";
-import { useForm } from "react-hook-form";
-import * as yup from "yup";
+import { yupResolver } from '@hookform/resolvers/yup';
+import React from 'react';
+import { useForm } from 'react-hook-form';
+import { useNavigate } from 'react-router-dom';
+import * as yup from 'yup';
+
+import { userActions } from '../../actions/questionActions';
+import { useAppContext } from '../../providers/contextProvider';
 
 const schema = yup.object({
   userName: yup
     .string()
     .required()
-    .matches(/^[A-Za-z]+$/, "Only alphabets are allowed"),
+    .matches(/^[A-Za-z]+$/, 'Only alphabets are allowed'),
 });
 
 export default function Home() {
@@ -29,8 +30,9 @@ export default function Home() {
       type: userActions.SET_USER,
       payload: userName,
     });
-    navigate("/test-screen");
+    navigate('/test-screen');
   };
+
   return (
     <div className="flex items-center justify-center font-sans text-4xl h-screen">
       <form
@@ -57,7 +59,7 @@ export default function Home() {
             </svg>
           </span>
           <input
-            {...register("userName")}
+            {...register('userName')}
             type="text"
             className="rounded-none w-1/2 rounded-e-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 text-sm p-2.5  "
             placeholder="Enter Username"

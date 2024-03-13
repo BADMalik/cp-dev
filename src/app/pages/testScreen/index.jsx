@@ -1,8 +1,9 @@
-import React from "react";
-import { useAppContext } from "../../providers/contextProvider";
-import { testStatus } from "../../actions/questionActions";
-import QuestionComponent from "../../components/question";
-import Result from "../../components/result";
+import React from 'react';
+
+import { testStatus } from '../../actions/questionActions';
+import QuestionComponent from '../../components/question';
+import Result from '../../components/result';
+import { useAppContext } from '../../providers/contextProvider';
 
 const TestScreen = () => {
   const { contextValue } = useAppContext();

@@ -1,4 +1,4 @@
- class DB {
+class DB {
   constructor(questions) {
     this.questions = questions;
   }
@@ -12,4 +12,4 @@
   }
 }
 
-export default DB
+export default DB;

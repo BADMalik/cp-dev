@@ -1,5 +1,8 @@
-import React from "react";
-import Navbar from "../components/navBar";
+import PropTypes from 'prop-types';
+import React from 'react';
+
+import Navbar from '../components/navBar';
+
 const Layout = ({ children }) => {
   return (
     <>
@@ -7,6 +10,13 @@ const Layout = ({ children }) => {
       {children}
     </>
   );
+};
+
+Layout.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]),
 };
 
 export default Layout;

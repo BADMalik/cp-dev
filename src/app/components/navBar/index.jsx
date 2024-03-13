@@ -1,14 +1,15 @@
-import React from "react";
-import { useAppContext } from "../../providers/contextProvider";
-import { questionActionEnums } from "../../actions/questionActions";
-import { useNavigate } from "react-router-dom";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+
+import { questionActionEnums } from '../../actions/questionActions';
+import { useAppContext } from '../../providers/contextProvider';
 
 export default function Navbar() {
   const { contextValue, setContextValue } = useAppContext();
   const navigate = useNavigate();
   const reset = () => {
     setContextValue({ type: questionActionEnums.CLEAR_TEST });
-    navigate("/");
+    navigate('/');
   };
   return (
     <nav className="p-4 bg-cover bg-no-repeat bg-[url('./src/assets/star.png')]">

@@ -1,13 +1,15 @@
-import { useReducer } from "react";
-import "./App.css";
-import Layout from "./app/layout/Layout";
-import Home from "./app/pages/home";
-import { Route, Routes } from "react-router-dom";
-import { AppContext } from "./app/providers/contextProvider";
-import { initialContextState } from "./app/actions/questionActions";
-import { questionReducer } from "./app/reducers/questionReducer/questionsReducer";
-import TestScreen from "./app/pages/testScreen";
-import PrivateRoutes from "./app/protectedRoutes";
+import './App.css';
+
+import { useReducer } from 'react';
+import { Route, Routes } from 'react-router-dom';
+
+import { initialContextState } from './app/actions/questionActions';
+import Layout from './app/layout/Layout';
+import Home from './app/pages/home';
+import TestScreen from './app/pages/testScreen';
+import PrivateRoutes from './app/protectedRoutes';
+import { AppContext } from './app/providers/contextProvider';
+import { questionReducer } from './app/reducers/questionReducer/questionsReducer';
 
 const App = () => {
   const [contextValue, setContextValue] = useReducer(
