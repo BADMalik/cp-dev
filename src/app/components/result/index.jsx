@@ -1,7 +1,8 @@
-import React from "react";
-import { useAppContext } from "../../providers/contextProvider";
-import { questionActionEnums } from "../../actions/questionActions";
-import { useNavigate } from "react-router-dom";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+
+import { questionActionEnums } from '../../actions/questionActions';
+import { useAppContext } from '../../providers/contextProvider';
 
 export default function Result() {
   const { contextValue, setContextValue } = useAppContext();
@@ -18,12 +19,12 @@ export default function Result() {
       intro += selection.introWeight;
     }
 
-    return intro > extro ? "introvert" : "extrovert";
+    return intro > extro ? 'introvert' : 'extrovert';
   };
 
   const reset = () => {
     setContextValue({ type: questionActionEnums.CLEAR_TEST });
-    navigate("/");
+    navigate('/');
   };
 
   return (

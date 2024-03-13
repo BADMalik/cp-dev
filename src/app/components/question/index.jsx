@@ -1,7 +1,8 @@
-import React from "react";
-import QuestionIndex from "./questionIndex";
-import QuestionStatement from "./questionStatement";
-import QuestionControls from "./questionControls";
+import React from 'react';
+
+import QuestionControls from './questionControls';
+import QuestionIndex from './questionIndex';
+import QuestionStatement from './questionStatement';
 
 export default function QuestionComponent() {
   return (

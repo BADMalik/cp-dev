@@ -1,6 +1,7 @@
-import { Outlet, useNavigate } from "react-router-dom";
-import { useAppContext } from "../providers/contextProvider";
-import { useEffect } from "react";
+import { useEffect } from 'react';
+import { Outlet, useNavigate } from 'react-router-dom';
+
+import { useAppContext } from '../providers/contextProvider';
 
 const PrivateRoutes = () => {
   const { contextValue } = useAppContext();
@@ -9,7 +10,7 @@ const PrivateRoutes = () => {
   useEffect(() => {
     // Redirect to "/" if userName is falsy
     if (!contextValue?.userName) {
-      navigate("/");
+      navigate('/');
     }
   }, [contextValue, navigate]);
 

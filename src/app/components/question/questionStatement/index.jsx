@@ -1,6 +1,7 @@
-import React from "react";
-import { useAppContext } from "../../../providers/contextProvider";
-import { questionActionEnums } from "../../../actions/questionActions";
+import React from 'react';
+
+import { questionActionEnums } from '../../../actions/questionActions';
+import { useAppContext } from '../../../providers/contextProvider';
 export default function QuestionStatement() {
   const { contextValue, setContextValue } = useAppContext();
 
@@ -29,7 +30,7 @@ export default function QuestionStatement() {
                   id={option.value}
                   aria-checked={currentQuestion?.selection === option.value}
                   onChange={() => handleSelection(option.value)}
-                  value={option.value || ""}
+                  value={option.value || ''}
                   checked={currentQuestion?.selection === option.value}
                   className="w-4 h-4 text-start text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 "
                 />

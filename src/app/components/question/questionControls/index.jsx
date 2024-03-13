@@ -1,9 +1,10 @@
-import React from "react";
-import { useAppContext } from "../../../providers/contextProvider";
+import React from 'react';
+
 import {
   questionActionEnums,
   testStatus,
-} from "../../../actions/questionActions";
+} from '../../../actions/questionActions';
+import { useAppContext } from '../../../providers/contextProvider';
 
 export default function QuestionControls() {
   const { contextValue, setContextValue } = useAppContext();
@@ -34,7 +35,7 @@ export default function QuestionControls() {
           onClick={handlePrevious}
           className={`mr-2 text-gray-400 bg-transparent py-2 px-5 ${
             !previousDisabled &&
-            "hover:bg-teal-500 hover:text-white hover:rounded hover:shadow-md transition-all duration-300 transform-gpu hover:scale-105"
+            'hover:bg-teal-500 hover:text-white hover:rounded hover:shadow-md transition-all duration-300 transform-gpu hover:scale-105'
           } `}
         >
           Previous
@@ -44,7 +45,7 @@ export default function QuestionControls() {
           onClick={handleNext}
           disabled={disableNext}
           className={`mr-2 ml-2 ${
-            disableNext ? "bg-teal-500" : "bg-teal-400 hover:bg-teal-500 "
+            disableNext ? 'bg-teal-500' : 'bg-teal-400 hover:bg-teal-500 '
           } py-2 px-5 rounded shadow-md transition-all duration-300 transform-gpu hover:scale-105`}
         >
           Next
@@ -56,8 +57,8 @@ export default function QuestionControls() {
         onClick={handleFormSubmit}
         className={` bg-gray-300 py-2 px-5 rounded shadow-md ${
           enableSubmit
-            ? "bg-teal-400 hover:bg-teal-500 hover:text-white hover:rounded hover:shadow-md transition-all duration-300 transform-gpu hover:scale-105"
-            : "text-gray-500"
+            ? 'bg-teal-400 hover:bg-teal-500 hover:text-white hover:rounded hover:shadow-md transition-all duration-300 transform-gpu hover:scale-105'
+            : 'text-gray-500'
         } `}
       >
         Submit
