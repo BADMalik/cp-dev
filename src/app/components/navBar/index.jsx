@@ -15,7 +15,7 @@ export default function Navbar() {
     <nav className="p-4 bg-cover bg-no-repeat bg-[url('./src/assets/star.png')]">
       <div className="container mx-auto flex justify-between items-center">
         <a href="#" className="text-teal-400 text-2xl font-semibold">
-          Personality Test
+          Clean Proposals
         </a>
         {contextValue?.userName && (
           <ul className="flex space-x-4">
